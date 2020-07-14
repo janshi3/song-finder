@@ -1,0 +1,67 @@
+html{
+    background-color: #5C6378;
+    font-family: Georgia;
+}
+
+#songs{
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: repeat(3, 33.333vw);
+    justify-items: center;
+    text-align: center;
+    background: #8d99ae;
+    padding: 20px;
+}
+
+article{
+    background: #edf2f4;
+}
+
+header{
+    background: #2b2d42;
+    margin-left: -10px;
+    margin-right: -10px;
+    margin-top: -20px;
+    padding: 5px;
+    padding-bottom: 20px;
+    color: #ef233c;
+}
+
+header h1{
+    margin-left: 80px;
+    color: #d90429;
+}
+
+#search{
+    margin-left: 40px;
+}
+
+@media (max-width: 800px){
+    #songs{
+        grid-template-columns: 100vw;
+    }
+}
+
+@media (min-width: 800px) and (max-width: 1200px){
+    #songs{
+        grid-template-columns: repeat(2, 50vw);
+    }
+}
+
+@media (min-width: 2400px) and (max-width: 2800px){
+    #songs{
+        grid-template-columns: repeat(4, 25vw);
+    }
+}
+
+@media (min-width: 2800px) and (max-width: 3200px){
+    #songs{
+        grid-template-columns: repeat(5, 20vw);
+    }
+}
+
+@media (min-width: 3200px){
+    #songs{
+        grid-template-columns: repeat(6, 16.66666vw);
+    }
+}
